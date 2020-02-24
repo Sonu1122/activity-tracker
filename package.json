@@ -1,5 +1,5 @@
 {
-  "name": "excercise-tracker",
+  "name": "activity-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,9 +14,9 @@
   },
   "scripts": {
     "server": "cd API && nodemon server.js",
-    "client": "npm start",
+    "client": "PORT=3006 react-scripts start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start": "react-scripts start",
+    "start": "npm run dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
